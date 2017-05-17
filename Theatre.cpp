@@ -1,4 +1,5 @@
 #include "Theatre.h"
+#include "Movie.h"
 #include <string>
 #include <iostream>
 

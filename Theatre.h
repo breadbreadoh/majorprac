@@ -1,3 +1,4 @@
+#include "Movie.h"
 #ifndef THEATRE_H
 #define THEATRE_H
 
