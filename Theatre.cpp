@@ -10,15 +10,12 @@ Theatre::Theatre(int row, int clmn, bool premium){
 	this->clmn = clmn;
 	this->running = false;
 	this->clealiness = 5;
+	// this->movieTBP = Projectionist.getSchedule();
+	// IDK HOW..
 }
 
-void Theatre::setRunning(){
-	if(this->running == true){
-		this->running = false;
-	}
-	else{
-		this->running = true;
-	}
+void Theatre::setRunning(bool isRunning){
+	this->running = isRunning;
 }
 
 bool Theatre::getRunning(){

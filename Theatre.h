@@ -6,6 +6,9 @@ using namespace std;
 
 class Theatre{
 private:
+	//movie that is set to be played
+	Movie scheduledMovie;
+
 	//no limit 
 	int row;
 	//no limit
@@ -26,9 +29,8 @@ public:
 	//cleanliness will start at 5
 	Theatre(int row, int clmn, bool premium);
 
-	//sets running to true or false depending on current bool. 
-	//e.g. if true -> false and viceversa
-	void setRunning();
+	//sets running to true or false 
+	void setRunning(bool isRunning);
 
 	//return whether a movie is running or not
 	bool getRunning();
