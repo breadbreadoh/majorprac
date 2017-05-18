@@ -1,13 +1,19 @@
 #include <iostream>
 #include "Person.h"
 
-virtual void Person::printDetails(){}
+Person::Person(std::string pName, int pAge, std::string pJob) :
+	name(pName),
+	age(pAge),
+	job(pJob)
+{}
+
+void Person::printDetails(){}
 	
-void Person::setName(string aName)
+void Person::setName(string pName)
 {
-	if (aName!=NULL)
+	if (pName!=NULL)
 	{
-		name = aName;
+		name = pName;
 	}
 }
 
@@ -16,15 +22,28 @@ string Person::getName()
 	return name;
 }
 	
-void Person::setAge(int aAge)
+void Person::setAge(int pAge)
 {
-	if (aAge>0)
+	if (pAge>0)
 	{
-		age = aAge;
+		age = pAge;
 	}
 }
 
 int getAge()
 {
 	return age;
+}
+
+void Person::setJob(std::string pJob)
+{
+	if (pJob!=NULL)
+	{
+		job = pJob;
+	}
+}
+
+std::string getJob()
+{
+	return job;
 }
